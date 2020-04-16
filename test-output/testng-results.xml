@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="testSuite" duration-ms="23974" started-at="2020-04-15T23:27:22Z" finished-at="2020-04-15T23:27:46Z">
+    <groups>
+    </groups>
+    <test name="MytestCase" duration-ms="23974" started-at="2020-04-15T23:27:22Z" finished-at="2020-04-15T23:27:46Z">
+      <class name="tests.TEDsearchTest">
+        <test-method status="PASS" signature="startDriver(java.lang.String)[pri:0, instance:tests.TEDsearchTest@a4102b8]" name="startDriver" is-config="true" duration-ms="33736" started-at="2020-04-15T23:26:49Z" finished-at="2020-04-15T23:27:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method status="FAIL" signature="TEDSearchinGoogleplay()[pri:0, instance:tests.TEDsearchTest@a4102b8]" name="TEDSearchinGoogleplay" duration-ms="13129" started-at="2020-04-15T23:27:22Z" finished-at="2020-04-15T23:27:36Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Educaton] but found [Education]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Educaton] but found [Education]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at pages.TEDsearchpage.SelectEducation(TEDsearchpage.java:72)
+at tests.TEDsearchTest.TEDSearchinGoogleplay(TEDsearchTest.java:17)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TEDSearchinGoogleplay -->
+        <test-method status="PASS" signature="fbsearchingoogleplay()[pri:1, instance:tests.TEDsearchTest@a4102b8]" name="fbsearchingoogleplay" duration-ms="9844" started-at="2020-04-15T23:27:36Z" finished-at="2020-04-15T23:27:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fbsearchingoogleplay -->
+        <test-method status="PASS" signature="stopDriver()[pri:0, instance:tests.TEDsearchTest@a4102b8]" name="stopDriver" is-config="true" duration-ms="5" started-at="2020-04-15T23:27:47Z" finished-at="2020-04-15T23:27:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopDriver -->
+      </class> <!-- tests.TEDsearchTest -->
+    </test> <!-- MytestCase -->
+  </suite> <!-- testSuite -->
+</testng-results>
